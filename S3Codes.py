@@ -37,3 +37,11 @@ import boto3
 s3 = boto3.client('s3');
 response = s3.get_object(Bucket = 'BUCKETNAME',Key = 'test1.txt');
 print(response);
+
+
+# delete S3 Bucket
+
+import boto3
+s3 = boto3.client('s3');
+response = s3.delete_bucket(Bucket = 'somsbucket3');
+print(response);
